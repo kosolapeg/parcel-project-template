@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $primary-white-color;
+  color: $default-text-color;
+  font-family: $primary-font-family;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  width: 320px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 40px;
+  }
+  @media screen and (min-width: 1314px) {
+    width: 1314px;
+    padding: 0px;
+  }
+}
+
+.centred {
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 26px 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}

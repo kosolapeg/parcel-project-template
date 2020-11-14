@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 33px;
+}
+
+.navigation > .menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu > .item {
+  margin-right: 40px;
+}
