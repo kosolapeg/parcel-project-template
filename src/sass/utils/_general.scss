@@ -12,9 +12,9 @@ body {
   background-color: $primary-white-color;
   color: $default-text-color;
   font-family: $primary-font-family;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.15;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.66;
 }
 
 .container {
@@ -57,7 +57,15 @@ body {
 .link {
   text-decoration: none;
   cursor: pointer;
-  padding: 26px 0;
+  color: $accent-color;
+}
+
+.accent {
+  color: $accent-color;
+}
+
+.white {
+  color: $primary-white-color;
 }
 
 .list {
@@ -72,4 +80,43 @@ body {
   height: auto;
   padding: 0;
   margin: 0;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0;
+  border: 2px solid $accent-color;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $accent-color;
+  font-size: 12px;
+  line-height: 1.25;
+  min-width: 260px;
+  transition: color 0.2s $timing-function;
+
+  cursor: pointer;
+
+  &.filled {
+    background-color: $accent-color;
+    color: $primary-white-color;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: $accent-color;
+    }
+  }
+
+  &:hover,
+  &:active {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
 }

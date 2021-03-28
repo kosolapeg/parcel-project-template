@@ -1,17 +1,66 @@
-<header class="header">
+<header class="header section">
   <div class="container">
     <nav class="navigation">
-      <a href="./" class="logo link">
-        <img src="./images/logo.svg" alt="Логотип Hell English" />
+      <a href="./index.html" class="logo-link">
+        <svg
+          aria-label="Логотип Адский английский"
+          class="header-logo"
+          data-menu-logo
+        >
+          <use class="logo-black" href="./images/sprite.svg#logo"></use>
+          <use class="logo-white" href="./images/sprite.svg#logo-white"></use>
+        </svg>
       </a>
+
       <ul class="menu list">
-        <li class="item"><a href="./" class="link">Программы обучения</a></li>
-        <li class="item"><a href="./" class="link">О нас</a></li>
+        <li class="item">
+          <a href="#program" class="link">Программы обучения</a>
+        </li>
+        <li class="item"><a href="#solutions" class="link">О нас</a></li>
         <li class="item"><a href="./" class="link">Варианты обучения</a></li>
-        <li class="item"><a href="./" class="link">Контакты</a></li>
+        <li class="item">
+          <a href="#registration" class="link">Контакты</a>
+        </li>
       </ul>
-      <button type="button" class="button-call link">
+
+      <a href="#registration" class="btn button-call link" data-menu-call>
         Консультация по телефону
+      </a>
+
+      <div class="burger" data-menu>
+        <ul class="burger-menu list">
+          <li class="item">
+            <a href="#program" class="link">Программы обучения</a>
+          </li>
+          <li class="item"><a href="#solutions" class="link">О нас</a></li>
+          <li class="item"><a href="./" class="link">Варианты обучения</a></li>
+          <li class="item">
+            <a href="#registration" class="link">Контакты</a>
+          </li>
+        </ul>
+
+        <a href="#registration" class="btn button-call-tablet link">
+          Консультация по телефону
+        </a>
+      </div>
+
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="menu"
+        data-menu-button
+      >
+        <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+          <use
+            class="icon-menu-cross"
+            href="./images/sprite.svg#cross-button"
+          ></use>
+          <use
+            class="icon-menu-burger"
+            href="./images/sprite.svg#burger-button"
+          ></use>
+        </svg>
       </button>
     </nav>
   </div>

@@ -3,15 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>HellEN - английский язык сложно но толково!</title>
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/header.html"></include>
+
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/problems.html"></include>
+      <include src="./partials/solutions.html"></include>
+      <include src="./partials/program.html"></include>
+      <include src="./partials/teacher.html"></include>
+      <include src="./partials/guarantees.html"></include>
+      <include src="./partials/testimonial.html"></include>
+      <include src="./partials/registration.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
 
     <include src="./partials/footer.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

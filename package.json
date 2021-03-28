@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://kosolapeg.github.io/parcel-project-template",
+  "homepage": "https://kosolapeg.github.io/hell-en",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url /parcel-project-template/",
+    "predeploy": "npm run build -- --public-url /hell-en/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -25,5 +25,6 @@
     "parcel-bundler": "^1.12.4",
     "posthtml-include": "^1.4.3",
     "sass": "^1.26.9"
-  }
+  },
+  "dependencies": {}
 }

@@ -1,0 +1,139 @@
+.solutions .title {
+  color: $title-color;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1314px) {
+    padding: 0 30px;
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+}
+
+.solution-icon {
+  fill: $accent-color;
+  //   margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.solution-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: -10px;
+  }
+}
+
+.solution-list .item {
+  width: 100%;
+  height: 280px;
+  padding-top: 30px;
+
+  margin-bottom: 20px;
+  background: #ffffff;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 20px 0px 20px;
+    margin: 10px;
+    width: calc((100% - 40px) / 2);
+    height: 333px;
+  }
+
+  @media screen and (min-width: 1314px) {
+    width: calc((100% - 60px) / 3);
+    height: 425px;
+  }
+
+  &:hover {
+    background-color: $accent-color;
+  }
+
+  &:hover .solution-title,
+  &:active .solution-title,
+  &:hover .solution-title::after,
+  &:active .solution-title::after,
+  &:hover .solution-description,
+  &:active .solution-description,
+  &:hover .solution-icon,
+  &:active .solution-icon {
+    color: $primary-white-color;
+    fill: $primary-white-color;
+  }
+}
+
+.solution-title {
+  margin: 0;
+  color: $title-color;
+
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.43;
+
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  @media screen and (min-width: 1314px) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  &::after {
+    content: '—';
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+    color: $accent-color;
+    /* or 33px */
+
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.08em;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.solution-description {
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  @media screen and (min-width: 1314px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
